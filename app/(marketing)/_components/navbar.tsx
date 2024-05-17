@@ -43,7 +43,7 @@ export const Navbar = () => {
                     <>
                         <Button variant="ghost" size="sm" asChild>
                             <Link href="/documents">
-                                Login
+                                Start Writing
                             </Link>
                         </Button>
                         <UserButton
