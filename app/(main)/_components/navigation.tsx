@@ -14,7 +14,7 @@ export const Navigation = () => {
     const sidebarRef = useRef<ElementRef<"aside">>(null);
     const navbarRef = useRef<ElementRef<"div">>(null);
     const [isResetting, setIsResetting] = useState(false);
-    const [isCollapsed, setItIsCollapsed] = useState(isMobile);
+    const [isCollapsed, setIsCollapsed] = useState(isMobile);
 
     const handleMouseDown = (
         event: React.MouseEvent<HTMLDivElement, MouseEvent>
@@ -47,6 +47,24 @@ export const Navigation = () => {
         document.removeEventListener("mouseup", handleMouseUp);
     };
 
+    const resetWidth = () => {
+        if (sidebarRef.current && navbarRef.current) {
+            setIsCollapsed(false);
+            setIsResetting(true);
+
+            sidebarRef.current.style.width = isMobile ? "100%" : "240px";
+            navbarRef.current.style.setProperty(
+                "width",
+                isMobile ? "0" : "calc(100%-240px)"
+            );
+            navbarRef.current.style.setProperty(
+                "left",
+                isMobile ? "100%" : "240px"
+            );
+            setTimeout(() => setIsResetting(false), 300);
+        }
+    }
+
     return (
         <>
             <aside
@@ -74,7 +92,7 @@ export const Navigation = () => {
                 </div>
                 <div
                     onMouseDown={handleMouseDown}
-                    onClick={() => {}}
+                    onClick={resetWidth}
                     className="opacity-0 group-hover/sidebar:opacity-100 transition cursor-ew-resize absolute h-full w-1 bg-primary/10 right-0 top-0"
                 />
             </aside>
