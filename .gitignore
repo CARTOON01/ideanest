@@ -38,3 +38,6 @@ next-env.d.ts
 
 # trunk
 .trunk
+
+# AWS
+aws.yaml
