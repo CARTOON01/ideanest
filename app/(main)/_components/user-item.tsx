@@ -5,10 +5,10 @@ import {
     AvatarImage
 } from "@/components/ui/avatar";
 import { 
-    DropdownMenu, 
-    DropdownMenuContent, 
-    DropdownMenuItem, 
-    DropdownMenuSeparator, 
+    DropdownMenu,
+    DropdownMenuContent,
+    DropdownMenuItem,
+    DropdownMenuSeparator,
     DropdownMenuTrigger 
 } from "@/components/ui/dropdown-menu";
 
