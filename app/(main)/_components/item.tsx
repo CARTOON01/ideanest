@@ -52,13 +52,14 @@ export const Item = ({
     const onCreate = (
         event: React.MouseEvent<HTMLDivElement, MouseEvent>
     ) => {
+        event.stopPropagation();
         if (!id) return;
         const promise = create({ title: "New Document", parentDocument: id })
             .then((documentId) => {
                 if (!expanded) {
                     onExpand?.();
                 }
-                router.push(`/documents/${documentId}`);
+                //router.push(`/documents/${documentId}`);
         });
 
         toast.promise(promise, {
