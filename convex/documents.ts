@@ -39,6 +39,8 @@ export const archive = mutation({
                     isArchived: true,
                 });
 
+                recursiveArchive(args.id);
+
                 await recursiveArchive(child._id);
             }
         }
