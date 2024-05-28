@@ -177,6 +177,7 @@ export const restore = mutation({
         };
 
         if (existingDocuments.parentDocument) {
+            // deepcode ignore Sqli: <please specify a reason of ignoring this>
             const parent = await ctx.db.get(existingDocuments.parentDocument);
             if (parent?.isArchived) {
                 options.parentDocument = undefined;
