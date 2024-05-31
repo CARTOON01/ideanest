@@ -5,8 +5,10 @@ import {
   BlockNoteEditor,
   PartialBlock
 } from "@blocknote/core";
-import { useBlockNote } from "@blocknote/react";
-import { BlockNoteView } from "@blocknote/mantine";
+import {
+  BlockNoteView,
+  useBlockNote
+} from "@blocknote/react";
 import "@blocknote/core/style.css";
 
 import { useEdgeStore } from "@/lib/edgestore";
