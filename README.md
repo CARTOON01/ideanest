@@ -1,5 +1,17 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
+## Table of Contents
+
+- [About](#about)
+- [Technologies used](#technologies-used)
+- [Features](#Features)
+- [Installation](#installation)
+- [Install Dependancies](#install-dependancies)
+- [Configuration](#configuration)
+- [Running the app](#running-the-app)
+- [License](#license)
+- [Authors](#authors)
+- [Demo](#demo)
 
 ## About
 
@@ -36,16 +48,6 @@ IdeaNest is a note making application which allows users to write notes and can 
     yarn install
 ```
 
-## Running the app
-
-``` bash
-    npm run dev
-    # open another terminal and execute
-    npx convex dev
-    # both terminal should run simultaneously
-```
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
-
 ## Configuration
 create a .env.local
 ```env
@@ -60,6 +62,17 @@ EDGE_STORE_ACCESS_KEY=
 EDGE_STORE_SECRET_KEY=
 ```
 
+## Running the app
+
+``` bash
+    npm run dev
+    # open another terminal and execute
+    npx convex dev
+    # both terminal should run simultaneously
+```
+Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+
+
 ## Authors
 
 - **Brian Ngugi** - [CARTOON01](https://github.com/CARTOON01)
@@ -68,7 +81,7 @@ EDGE_STORE_SECRET_KEY=
 
 This project is licensed under the MIT License. See the [LICENSE](https://github.com/CARTOON01/ideanest/blob/main/LICENSE) file for details.
 
-## Web App
+## Demo
 Here is the live web application
 [live](https://note-app-nine-mu.vercel.app/)
 
