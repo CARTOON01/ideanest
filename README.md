@@ -1,36 +1,71 @@
 This is a [Next.js](https://nextjs.org/) project bootstrapped with [`create-next-app`](https://github.com/vercel/next.js/tree/canary/packages/create-next-app).
 
-## Getting Started
 
-First, run the development server:
+## About
 
+IdeaNest is a note making application which allows users to write notes and can publish them to the web.
+
+
+## Technologies used
+- Next.js: React framework for server-side rendering and static site generation.
+- Clerk: Authentication and user management service.
+- Convex: Backend as a service for real-time data.
+- Edge Store: Optimized data storage service.
+- Tailwind CSS: Utility-first CSS framework.
+- Lucide: Icon library.
+- Radix UI: Accessible UI components.
+
+## Features
+- Authentication: Secure user authentication and management with Clerk.
+- Real-Time Data: Real-time data fetching and updates with Convex.
+- Optimized Data Storage: Efficient data storage and access with Edge Store.
+- Responsive Design: Tailwind CSS for utility-first, responsive design.
+- Rich Icons: Consistent and scalable icons with Lucide.
+- Accessible UI: Accessible UI components with Radix UI.
+
+## Installation
 ```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+    git clone https://github.com/CARTOON01/ideanest.git
+    cd ideanest
 ```
 
+### Install Dependancies
+```bash
+    npm install
+    # or
+    yarn install
+```
+
+## Running the app
+
+``` bash
+    npm run dev
+    # open another terminal and execute
+    npx convex dev
+    # both terminal should run simultaneously
+```
 Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Configuration
+create a .env.local
+```env
+CONVEX_DEPLOYMENT=
 
-This project uses [`next/font`](https://nextjs.org/docs/basic-features/font-optimization) to automatically optimize and load Inter, a custom Google Font.
+NEXT_PUBLIC_CONVEX_URL=
 
-## Learn More
+NEXT_PUBLIC_CLERK_PUBLISHABLE_KEY=
+CLERK_SECRET_KEY=
 
-To learn more about Next.js, take a look at the following resources:
+EDGE_STORE_ACCESS_KEY=
+EDGE_STORE_SECRET_KEY=
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+## Authors
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js/) - your feedback and contributions are welcome!
+- **Brian Ngugi** - [CARTOON01](https://github.com/CARTOON01)
 
-## Deploy on Vercel
+## Web App
+Here is the live web application
+[live](https://note-app-nine-mu.vercel.app/)
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/deployment) for more details.
