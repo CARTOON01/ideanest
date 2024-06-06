@@ -64,6 +64,10 @@ EDGE_STORE_SECRET_KEY=
 
 - **Brian Ngugi** - [CARTOON01](https://github.com/CARTOON01)
 
+## License
+
+This project is licensed under the MIT License. See the [LICENSE](https://github.com/CARTOON01/ideanest/blob/main/LICENSE) file for details.
+
 ## Web App
 Here is the live web application
 [live](https://note-app-nine-mu.vercel.app/)
