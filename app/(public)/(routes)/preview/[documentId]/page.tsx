@@ -66,7 +66,7 @@ const DocumentIdPage = ({
         />
       </div>
     </div>
-   );
+  );
 }
  
 export default DocumentIdPage;
