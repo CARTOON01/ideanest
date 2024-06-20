@@ -12,7 +12,7 @@ export const Heading = () => {
     return (
         <div className="max-w-3xl space-y-4">
             <h1 className="text-3xl sm:text-5xl md:text-6xl font-bold">
-                Your Ideas, Documents & Workflow. Unified. Welcome to <span className="underline">IdeaNest</span>
+                Your Ideas, Documents & Workflow. Welcome to <span className="underline">IdeaNest</span>
             </h1>
             <h3 className="text-base sm:text-xl md:text-3xl font-medium">
                 IdeaNest is a Workspace where <br />
