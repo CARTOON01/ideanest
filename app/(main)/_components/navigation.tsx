@@ -3,6 +3,7 @@
 import { cn } from "@/lib/utils";
 import {
     ChevronsLeft,
+    Home,
     MenuIcon,
     Plus,
     PlusCircle,
@@ -152,6 +153,11 @@ export const Navigation = () => {
                 </div>
                 <div>
                     <UserItem />
+                    <Item 
+                        label="Home"
+                        icon={Home}
+                        onClick={() => router.push("/")}
+                    />
                     <Item
                         label="Search"
                         icon={Search}
