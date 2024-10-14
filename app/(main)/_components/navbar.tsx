@@ -55,7 +55,7 @@ export const Navbar = ({
                     <Title initialData={document} />
                     <div className="flex items-center gap-x-2">
                         <Publish initialData={document} />
-                        <Button variant="outline" size="sm">Return Home</Button>
+                        <Button variant="outline" size="sm" onClick={() =>("/")}>Return Home</Button>
                         <Menu documentId={document._id} />
                     </div>
                 </div>
